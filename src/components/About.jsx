@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { fadeInUp } from '../animations';
 import profileImg from '../assets/profile.jpg';
 
