@@ -13,7 +13,7 @@ import Contact from './components/Contact';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio/">
       <Header />
       <main>
         <Routes>
