@@ -13,7 +13,7 @@ fetch(`https://api.github.com/users/${username}/repos`)
       .map(repo => ({
         name: repo.name,
         description: repo.description || "Design & Web Project",
-        preview: `https://${username}.github.io/${repo.name}`,
+        preview: repo.homepage || repo.html_url,
         tags: projectTags[repo.name] || []
       }));
 

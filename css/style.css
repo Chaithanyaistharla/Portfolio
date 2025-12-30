@@ -1,3 +1,38 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background: #0B0F19;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-pic {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+}
+
+.header-nav a {
+  margin-left: 1.5rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-nav a:hover {
+  color: var(--primary);
+}
+
 :root {
   --bg: #0B0F19;
   --card: #11162A;
@@ -110,4 +145,52 @@ footer {
   text-align: center;
   padding: 2rem;
   color: var(--muted);
+}
+
+.service-card,
+.process-card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.service-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+
+.page {
+  padding: 4rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.card span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills-grid span {
+  background: var(--card);
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--primary);
 }
