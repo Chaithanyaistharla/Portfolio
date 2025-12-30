@@ -1,0 +1,113 @@
+:root {
+  --bg: #0B0F19;
+  --card: #11162A;
+  --primary: #6C8CFF;
+  --accent: #22D3EE;
+  --text: #E5E7EB;
+  --muted: #9CA3AF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  padding: 4rem;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero span {
+  color: var(--primary);
+}
+
+.hero-illustration lottie-player {
+  width: 420px;
+  height: 420px;
+}
+
+.btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.primary {
+  background: var(--primary);
+  color: #000;
+}
+
+.ghost {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+section {
+  padding: 4rem;
+}
+
+.service-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.service-card,
+.project-card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.project-card.featured {
+  border: 2px solid var(--accent);
+}
+
+.filters {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.filters button {
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  padding: 0.3rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: var(--primary);
+  color: #000;
+}
+
+.process-steps span {
+  margin-right: 1.5rem;
+  color: var(--accent);
+}
+
+.contact-card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+}

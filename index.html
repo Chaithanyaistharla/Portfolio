@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chaithanya Sujith Sinha Istharla</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Chaithanya | UI/UX Designer & Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UI/UX Designer & Web Developer specializing in Figma, responsive web design, and scalable applications." />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-text reveal">
+    <h1>Designing digital products<br><span>people trust</span></h1>
+    <p>UI/UX Designer • Web Developer • Figma Specialist</p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn primary">View Work</a>
+      <a href="#contact" class="btn ghost">Contact Me</a>
+    </div>
+  </div>
+
+  <div class="hero-illustration">
+    <lottie-player
+      src="assets/illustrations/hero.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay>
+    </lottie-player>
+  </div>
+</header>
+
+<section class="services reveal">
+  <h2>What I Do</h2>
+
+  <div class="service-grid">
+    <div class="service-card">UI / UX Design</div>
+    <div class="service-card">Web Development</div>
+    <div class="service-card">ML / Data Applications</div>
+  </div>
+</section>
+
+<section id="projects" class="projects reveal">
+  <h2>Projects</h2>
+
+  <div class="filters">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="uiux">UI / UX</button>
+    <button data-filter="web">Web Dev</button>
+    <button data-filter="ml">ML / Data</button>
+  </div>
+
+  <div class="project-grid"></div>
+</section>
+
+<section class="process reveal">
+  <h2>My Process</h2>
+  <div class="process-steps">
+    <span>Discover</span>
+    <span>Design</span>
+    <span>Build</span>
+    <span>Deliver</span>
+  </div>
+</section>
+
+<section id="contact" class="contact reveal">
+  <h2>Let’s Work Together</h2>
+  <p>Interested in collaborating? Reach out directly.</p>
+
+  <div class="contact-card">
+    <p>📧 istarlachaitanya@gmail.com</p>
+    <p>🔗 github.com/Chaithanyaistharla</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Chaithanya Istharla
+</footer>
+
+<script type="module" src="js/projects.js"></script>
+<script src="js/main.js"></script>
+<script src="js/scroll.js"></script>
+
+</body>
 </html>
